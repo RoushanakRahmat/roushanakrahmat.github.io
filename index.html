@@ -12,13 +12,53 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the new skills section layout */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skills-group {
+            width: 48%; /* Adjust based on desired layout */
+            margin-bottom: 20px;
+        }
+        .skills-group h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .skills-group ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 10px;
+            font-size: 0.95em;
+        }
+        .skills-group ul li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+        }
+        .skills-group ul li:before {
+            content: "\f00c"; /* Font Awesome check icon */
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            color: #1282a2; /* Highlight color */
+        }
+        @media screen and (max-width: 768px) {
+            .skills-group {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
@@ -47,28 +87,13 @@
             </li>
         </ul>
     </header>
-    <!-- End header -->
-
     <div id="lead">
         <div id="lead-content">
             <h1>Dr Roushanak Rahmat, PhD</h1>
-            <h2>AI Scientist</h2>
-            <h3>Freelancer, Speaker, Blogger, Researcher and Developer in Tech</h3>
-            <!-- <hr />
-            <ul class="social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul> -->
-            <!-- <hr /> -->
+            <h2>Principal AI Architect & Strategist | Director of AI & GenAI Strategy</h2>
+            <h3>Google Developer Expert (AI & Cloud)</h3>
             <a href="" class="btn-rounded-white" target="_blank">Download Resume</a>
         </div>
-        <!-- End #lead-content -->
-
         <div id="lead-overlay"></div>
 
         <div id="lead-down">
@@ -76,10 +101,7 @@
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
+        </div>
     <div id="about">
         <div class="container">
             <div class="row">
@@ -87,21 +109,22 @@
                     <h2 class="heading">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p> Roushanak is an accomplished AI scientist with a wealth of experience in computer vision, medical imaging, and data science. She holds a PhD in AI from Heriot-Watt University, earned through a collaboration with the prestigious University of Edinburgh. Roushanak's expertise spans a diverse range of areas, including computer vision, medical image analysis, image processing, signal processing, machine learning, deep learning, healthtech, and data science.
+                    <p>
+                        Roushanak is a PhD-qualified Principal AI Leader and Google Developer Expert (GDE) with 10+ years of deep expertise in developing, architecting, and deploying enterprise-scale Generative AI, Agentic AI, and Deep Learning solutions across finance, energy, and healthcare sectors[cite: 101].
                     </p>
                     <br>
-                    <p>  During her tenure at Elekta, a world-leading medical tech company, Roushanak made significant contributions to the field of AI in healthcare. She played a pivotal role in replacing traditional models with cutting-edge AI solutions and spearheaded groundbreaking projects aimed at improving radiotherapy treatment through the integration of advanced technologies. Her passion for incorporating uncertainty and diversity into structured AI models has enabled novel applications in healthcare. With a strong background in handling diverse medical and non-medical data, such as MRI, CT, CBCT, point cloud, and text, Roushanak utilizes Python and leading deep learning libraries like PyTorch, Keras, Jax, and TensorFlow to develop state-of-the-art AI solutions.
+                    <p>
+                        She has proven success in shaping AI strategy and transformation roadmaps for C-suite executives, resulting in measurable improvements in efficiency and profitability[cite: 102]. Recognized as a Top 100 Woman in Tech and a US Patent inventor, she drives responsible innovation, technical excellence, and talent mentorship within high-performing global teams[cite: 103].
                     </p>
                     <br>
-                    <p> Beyond her professional work, Roushanak is an avid public speaker on technical AI topics and actively promotes diversity and inclusion as a Women Techmaker ambassador. She shares her knowledge and insights through her blog on Medium, content creation on Youtube, Instagram, and Twitter, as well as her open-source contributions on Github. As a freelancer, she embraces new challenges with enthusiasm, seeking opportunities to apply her expertise and make a positive impact. Roushanak's exceptional communication skills and experience in leading teams make her a valuable collaborator, fostering a collaborative environment that brings out the best in her colleagues.
+                    <p>
+                        She is an active Google Developer Expert (AI & Cloud) and Google Women Techmakers Ambassador. She regularly speaks at Google developer groups, AI summits, and tech meetups, and shares her knowledge through a published technical blog, Youtube, and open-source contributions on Github[cite: 105, 107].
                     </p>
-                    <br>
                 </div>
 
                 <div class="col-sm-5 social">
                     <ul>
                         <li><a href="https://github.com/RoushanakRahmat" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        <!-- <li><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li> -->
                         <li><a href="https://www.linkedin.com/in/roushanakrahmat/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="https://medium.com/@roushanakrahmat" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
                         <li><a href="https://www.instagram.com/roushanakrahmat/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -114,84 +137,63 @@
             </div>
         </div>
     </div>
-    <!-- End #about -->
-
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-          <div data-date="May 2023 – Present">
-              <h3>Freelance,</h3>
-              <h3><small><small> UK</small></small></h3>
-              <h4><b>Freelance</b>, AI </h4>
+
+          <div data-date="2024 – PRESENT">
+              <h3>IBM,</h3>
+              <h3><small><small> London, UK</small></small></h3>
+              <h4><b>Principal AI/GenAI Architect & Consultant</b></h4>
+              <p>
+                  Served as the primary technical expert and AI Architect to C-suite and executive stakeholders for major clients, driving strategic GenAI roadmaps and maximising business value[cite: 126]. Architected end-to-end AI systems using LLMs, Retrieval-Augmented Generation (RAG), and multi-agent orchestration frameworks[cite: 127, 128].
+              </p>
           </div>
 
-            <div data-date="April 2021 – April 2023">
+          <div data-date="2021 – PRESENT">
+              <h3>QAHE Associate Professor,</h3>
+              <h3><small><small> UK</small></small></h3>
+              <h4><b>Associate Professor</b> (for Ulster, Solent, Roehampton, Middlesex Universities)</h4>
+              <p>
+                  Directed instruction delivery for high-demand Computer Science modules, consistently earning top student evaluations. Spearheaded talent development by supervising over 100 dissertations[cite: 171, 172].
+              </p>
+          </div>
+
+            <div data-date="2021 – 2023">
                 <h3>Elekta,</h3>
                 <h3><small><small> UK</small></small></h3>
-                <h4><b>AI Research Scientist</b>, AI in Radiotherapy Imaging</h4>
-                <!-- <p>
-                    Development and application of Deep Learning models for predicting site of lung cancer initiation and progression by merging medical image screening and patient’s demographic records.
-                </p> -->
+                <h4><b>Principal AI/ML Scientist & Innovator</b></h4>
+                <p>
+                    Pioneered and deployed mission-critical Deep Learning and Computer Vision solutions for radiotherapy systems, enhancing clinical product efficacy[cite: 134]. Innovated core AI algorithms for medical imaging, resulting in multiple US patents for advanced image reconstruction and segmentation[cite: 135].
+                </p>
             </div>
 
-          <!-- <div data-date="January 2022 – Present">
-              <h3>Google #IamRemarkable,</h3>
-              <h3><small><small> UK</small></small></h3>
-              <h4><b>Ambassador and facilitator</b>, Empowering Women in Technology</h4>
-              <!-- <p>
-                  Development and application of Deep Learning models for predicting site of lung cancer initiation and progression by merging medical image screening and patient’s demographic records.
-              </p> -->
-          <!-- </div>
 
-          <div data-date="November 2021 – Present">
-              <h3>Google Women Techmakers,</h3>
-              <h3><small><small> UK</small></small></h3>
-              <h4><b>Ambassador</b>, Empowering Women and Underrepresented Groups</h4>
-              <!-- <p>
-                  Development and application of Deep Learning models for predicting site of lung cancer initiation and progression by merging medical image screening and patient’s demographic records.
-              </p> -->
-          <!-- </div> -->
-
-          <!-- <div data-date="December 2021 – Present">
-              <h3>Code First Girls,</h3>
-              <h3><small><small> UK</small></small></h3>
-              <h4><b>Python Instructor</b>, Data Science</h4>
-              <!-- <p>
-                  Development and application of Deep Learning models for predicting site of lung cancer initiation and progression by merging medical image screening and patient’s demographic records.
-              </p> -->
-          <!-- </div> -->
-
-          <div data-date="February 2021 – April 2021">
-              <h3>CBEHx,</h3>
-              <h3><small><small> UK</small></small></h3>
-              <h4><b>Course Lecturer and Curriculum Developer</b>, Artificial Intelligence</h4>
-              <!-- <p>
-                  Development and application of Deep Learning models for predicting site of lung cancer initiation and progression by merging medical image screening and patient’s demographic records.
-              </p> -->
-          </div>
-
-            <div data-date="August 2019 – April 2021">
+            <div data-date="2019 – 2021">
                 <h3>The Institute of Cancer Research,</h3>
                 <h3><small><small>University of London, UK</small></small></h3>
-                <h4><b>Deep Learning Research Fellow</b>, Artificial Intelligence</h4>
-                <!-- <p>
-                    Development and application of Deep Learning models for predicting site of lung cancer initiation and progression by merging medical image screening and patient’s demographic records.
-                </p> -->
+                <h4><b>Lead AI Research Scientist</b>, Artificial Intelligence</h4>
+                <p>
+                    Pioneered a hybrid Deep Learning model for high-accuracy, early lung cancer detection, successfully integrating multi-modal data streams including CT scans[cite: 175]. Published high-impact research in peer-reviewed journals, focusing on the application of Computer Vision and AI in oncology[cite: 178].
+                </p>
+            </div>
+
+            <div data-date="2017 – 2019">
+                <h3>University of Cambridge</h3>
+                <h3><small><small>Cambridge Brain Tumour Imaging Laboratory, UK</small></small></h3>
+                <h4><b>AI Innovation Specialist</b> in Healthcare</h4>
+                <p>
+                    Developed and deployed advanced Deep Learning and computational imaging solutions, specialising in high-accuracy glioma tumour image segmentation[cite: 181]. Engineered AI models to not only segment tumour shape but also provide predictive analysis of tumour recurrence[cite: 182].
+                </p>
             </div>
 
             <div data-date="September 2018 – August 2020">
                 <h3>Queens’ College,</h3>
                 <h3><small><small>University of Cambridge, UK</small></small></h3>
                 <h4><b>Postdoctoral Research Associate</b>, Deep Learning in Medical Imaging</h4>
-            </div>
-
-            <div data-date="August 2017 – August 2019">
-                <h3>University of Cambridge</h3>
-                <h3><small><small>Cambridge Brain Tumour Imaging Laboratory, UK</small></small></h3>
-                <h4><b>Research Associate</b>, Artificial Intelligence in Healthcare</h4>
-                <!-- <p>
-                    Automatic computational analysis of multi-modal brain tumour imaging.
-                </p> -->
+                <p>
+                    Awarded highly selective Postdoctoral Scholar position (1 of 10 global), validating scientific excellence[cite: 185].
+                </p>
             </div>
 
             <div data-date="May 2018 – June 2018">
@@ -203,26 +205,10 @@
             <div data-date="January 2016 – August 2017">
                 <h3>University of St. Andrews,</h3>
                 <h3><small><small>School of Computer Science, UK</small></small></h3>
-                <h4><b>Research Fellow</b>, Artificial Intelligence</h4>
-                <!-- <p>
-                  <ul>
-                      <li>
-                        Project 1: Tumour image segmentation
-                        <p>
-                        Developed new level set segmentation model with the least amount of dependency to its parameter settings
-                        </p>
-                      </li>
-                      <li>
-                        Project 2: Automatic segmentation of optic nerve using Archlight images
-                        <p>
-                          Improved automatic segmentation of the optic nerve’s cup to disc ratio for earlier detection of glaucoma
-                        <p>
-                      </li>
-                      <li>
-                          Other Projects: Benchmark cloud computing and mobile app development, Systems Research Group
-                      </li>
-                  </ul>
-                </p> -->
+                <h4><b>Data Scientist</b></h4>
+                <p>
+                    Spearheaded the development and deployment of a mobile application (Android) in partnership with the School of Geography for city designs, and led a team to create the Arclight Android app for early glaucoma detection in developing countries[cite: 189, 190, 191].
+                </p>
             </div>
 
             <div data-date="January 2013–December 2016">
@@ -244,14 +230,12 @@
 
         </div>
     </div>
-    <!-- End #experience -->
-
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Heriot-Watt University <small><small>in collaboration with</small></small> The University of Edinburgh</h3>
             <span class="education-date">2013 - 2017</span>
-            <h4>PhD, Image Processing & Computer Vision</h4>
+            <h4>PhD in AI: Image Processing & Computer Vision</h4>
             <p>
               Institute of Sensors, Signals and Systems – Institute for Digital Communications – Cancer Research Center
             </p>
@@ -261,8 +245,6 @@
               </li>
           </ul>
         </div>
-        <!-- End .education-block -->
-
         <div class="education-block">
             <h3>Oxford Machine Learning Summer School</h3>
             <span class="education-date">2021</span>
@@ -273,8 +255,6 @@
                 </li>
             </ul>
         </div>
-        <!-- End .education-block -->
-
         <div class="education-block">
             <h3>International Computer Vision Summer School</h3>
             <span class="education-date">2013</span>
@@ -285,8 +265,6 @@
                 </li>
             </ul>
         </div>
-        <!-- End .education-block -->
-
         <div class="education-block">
             <h3>University Technology Petronas</h3>
             <span class="education-date">2009 - 2012</span>
@@ -298,16 +276,8 @@
                 <li>
                     Thesis: 3D shape reconstruction using shape from focus
                 </li>
-                <!-- <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li> -->
             </ul>
         </div>
-        <!-- End .education-block -->
-
         <div class="education-block">
             <h3>University Technology Petronas</h3>
             <span class="education-date">2005 - 2009</span>
@@ -319,18 +289,9 @@
                 <li>
                     Thesis: Online signature verification (by data glove) using SVD method
                 </li>
-                <!-- <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li> -->
             </ul>
         </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
+        </div>
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
@@ -340,170 +301,157 @@
                   <div class="project-image">
                       <img src="images/CBEHx.jpg" />
                   </div>
-                  <!-- End .project-image -->
                   <div class="project-info">
                       <h3>AI online course</h3>
                       <p style="text-align:left;">Designed and created an online intermediate-level course covering the principles of AI. This consists of video lectures (in the topics of: CNN, RNN, NLP and GAN), python coding lectures, coding assignments and quizzes in each module.</p>
                       <a href="https://www.cbehx.co.uk/all-courses/"target="_blank">View Project</a>
                   </div>
-                  <!-- End .project-info -->
-              </div>
-              <!-- End .project -->
-
-                <div class="project shadow-large">
+                  </div>
+              <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/lung.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Deep learning for survival prediction</h3>
                         <p style="text-align:left;">Built a novel deep learning architecture for early detection of cancer. Predicting site of lung cancer initiation and progression using merged image screening and patient’s demographic data in one network (NLST dataset).</p>
-                        <!-- <a href="#">View Project</a> -->
+                        </div>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/Unet_retina.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Deep learning for vessel tree segmentation</h3>
                         <p style="text-align:left;">Studied differet types of U-net model for the retina vessel segmentation application.</p>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
+                    </div>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/brainn.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Automatic computational analysis of multi-modal brain tumour imaging</h3>
                         <p style="text-align:left;">Developed and applied image segmentation models, in particular deep learning, for automatic segmentation of glioma and vestibular schwannoma before treatment and prediction of progression pattern after treatment, using conventional structural and diffusion tensor images</p>
-                        <!-- <p style="text-align:left;">Collaborators: Microsoft Research Cambridge, Department of Radiology and Department of Applied Math- ematics and Theoretical Physics.</p> -->
                         <a href="https://www.sciencedirect.com/science/article/pii/S0010482520301815"target="_blank">View Project</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
+                    </div>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/LS.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>New level set model in follow up radiotherapy image analysis</h3>
                         <p style="text-align:left;">Developed new level set segmentation model with the least amount of dependency to its parameter settings</p>
                         <a href="https://link.springer.com/chapter/10.1007/978-3-319-60964-5_24"target="_blank">View Project</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
+                    </div>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/retina.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Automatic segmentation of optic nerve using Archlight images</h3>
                         <p style="text-align:left;">Automatic segmentation of the optic nerve’s (to calculate cup to disc ratio) for earlier detection of glaucoma.</p>
-                        <!-- <a href="#">View Project</a> -->
+                        </div>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/LungPhD.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Monitoring of lung cancer patients during radiotherapy using combined texture and level set analysis of CBCT Images</h3>
-                        <!-- <p style="text-align:left;">Improved automatic segmentation of the optic nerve’s cup to disc ratio for earlier detection of glaucoma</p> -->
                         <a href="https://www.ros.hw.ac.uk/handle/10399/3349"target="_blank">View Project</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
+                    </div>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/SFF.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>3D shape reconstruction using shape from focus</h3>
                         <p style="text-align:left;">Recovering the depth information of an object from a sequence of 2D images with varying focus is known as shape from focus.</p>
                         <a href="http://utpedia.utp.edu.my/3039/1/Thesis-Roushanak_Rahmat-G01224-July2009toDecember2011-MSc_in_EEE.pdf"target="_blank">View Project</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
+                    </div>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/dataglove.jpg" />
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Online signature verification (by data glove) using SVD</h3>
                         <p style="text-align:left;">The SVD technique is used to find r-singular vectors sensing the maximal energy of the signature data using data glove. </p>
                         <a href="http://utpedia.utp.edu.my/8809/1/2009%20-%20Online%20Signure%20Verification%20using%20SVD%20Method.pdf"target="_blank">View Project</a>
                     </div>
-                    <!-- End .project-info -->
+                    </div>
                 </div>
-                <!-- End .project -->
+        </div>
+    </div>
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skills-container">
 
+            <div class="skills-group">
+                <h3>Generative AI & LLMs</h3>
+                <ul>
+                    <li>Generative AI (LLMs, RAG, Agent Frameworks, Function Calling) [cite: 112]</li>
+                    <li>Prompt Engineering [cite: 113]</li>
+                    <li>LangChain, LangGraph, Agentspace [cite: 113]</li>
+                    <li>Gemini, ChatGPT, Amazon Bedrock [cite: 113]</li>
+                    <li>MCP, ADK, A2A [cite: 113]</li>
+                </ul>
+            </div>
 
+            <div class="skills-group">
+                <h3>Cloud Platforms</h3>
+                <ul>
+                    <li>GCP (Expert): Vertex AI, BigQuery, Looker, Compute Engine [cite: 115]</li>
+                    <li>AWS, Azure, IBM watsonx [cite: 116]</li>
+                </ul>
+                <h3>MLOps</h3>
+                <ul>
+                    <li>CI/CD, Docker, Terraform [cite: 118]</li>
+                    <li>Kubeflow, Git, GitHub, Airflow [cite: 118]</li>
+                </ul>
+            </div>
+
+            <div class="skills-group">
+                <h3>Programming (Expert)</h3>
+                <ul>
+                    <li>Python (TensorFlow, Keras, PyTorch, Pytest) [cite: 110]</li>
+                    <li>Pandas, Numpy, Scikit-Learn, SciPy, Matplotlib [cite: 110]</li>
+                    <li>C/C++, Java, MATLAB, R [cite: 142]</li>
+                </ul>
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Deep Learning, NLP, Computer Vision [cite: 120]</li>
+                    <li>Time Series Analysis, Reinforcement Learning, Anomaly Detection [cite: 120]</li>
+                </ul>
+            </div>
+
+            <div class="skills-group">
+                <h3>Tools and Databases</h3>
+                <ul>
+                    <li>SQL (Advanced): PostgreSQL, MySQL [cite: 122]</li>
+                    <li>Vector Stores (ChromaDB, AlloyDB, BigQuery) [cite: 122]</li>
+                    <li>ETL/ELT, Data Warehousing, PowerBI [cite: 123]</li>
+                </ul>
+                <h3>Specialised & Methodologies</h3>
+                <ul>
+                    <li>Medical Imaging (FSL, 3D Slicer, ImageJ) [cite: 140]</li>
+                    <li>Agile, Jira, Confluence, IBM Garage [cite: 139]</li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C/C++</li>
-            <li>Java</li>
-            <li>Assembly</li>
-            <li>MATLAB</li>
-            <li>Latex</li>
-            <li>Mac</li>
-            <li>Linux</li>
-            <li>Windows</li>
-            <li>MGithub</li>
-            <li>Android Studio</li>
-            <li>Quartus II</li>
-            <li>PSPICE</li>
-            <li>Keras</li>
-            <li>Tensorflow</li>
-            <li>Pandas</li>
-            <li>Scikit-Learn</li>
-            <li>FSL</li>
-            <li>3D Slicer</li>
-            <li>ImageJ</li>
-            <li>Mirada</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
     <div id="Publication">
-        <h2 class="heading">Publication</h2>
-            <!-- <p style="text-align:center;">Learn for free</p> -->
-            <p style="text-align:left;">1. <b>Rahmat R</b>, et al., Techniques for processing CBCT projections. US Patent App. 18/157,524 (2023). </p>
-            <p style="text-align:left;">2. <b>Rahmat R</b>, et al., Techniques for removing scatter from CBCT projections. US Patent App. 18/157,524 (2023). </p>
-            <p style="text-align:left;">3. <b>Rahmat R</b>, et al., Techniques for adaptive radiotherapy based on CBCT projection correction and reconstruction. US Patent App. 18/157,524 (2023). </p>
-            <p style="text-align:left;">4. <b>Rahmat R</b>, Harris-Birtill, D, Finn, D, Feng, Y, Montgomery, D, Nailon, W H, & McLaughlin, S. Radiomics-Led Monitoring of Non-small Cell Lung Cancer Patients During Radiotherapy. In 25th Annual Conference on Medical Image Understanding and Analysis 2021 (pp. 532-546). Springer.<a href="https://link.springer.com/chapter/10.1007/978-3-030-52791-4_4" target="_blank">[Publisher's link]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:R21ilOuevEIJ:scholar.google.com/&output=citation&scisdr=CgXdYspaEJSh0l5eM_8:AAGBfm0AAAAAYdtYK_8xIe_hoRLlGiL5u-EI4PYaJwCY&scisig=AAGBfm0AAAAAYdtYKySMsFe6l3iiIuIc7EEoPII4QQlG&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1" target="_blank">[Bibtex]</a></p>
+        <h2 class="heading">Intellectual Property & Publications</h2>
+            <h3 style="text-align:left; margin-top: 30px;">Intellectual Property (US Patent Applications)</h3>
+            <p style="text-align:left;">1. <b>Rahmat R</b>, et al., Techniques for processing CBCT projections. US Patent App. 18/157,524 (2024)[cite: 157]. </p>
+            <p style="text-align:left;">2. <b>Rahmat R</b>, et al., Techniques for removing scatter from CBCT projections. US Patent App. 18/157,504 (2024)[cite: 158]. </p>
+            <p style="text-align:left;">3. <b>Rahmat R</b>, et al., Techniques for adaptive radiotherapy based on CBCT projection correction and reconstruction. US Patent App. 18/157,531 (2024)[cite: 159]. </p>
+
+            <h3 style="text-align:left; margin-top: 30px;">Peer-Reviewed Publications</h3>
+            <p style="text-align:left;">4. <b>Rahmat R</b>, et al., Radiomics-Led Monitoring of Non-small Cell Lung Cancer Patients During Radiotherapy. In 25th Annual Conference on Medical Image Understanding and Analysis 2021 (pp. 532-546). Springer.<a href="https://link.springer.com/chapter/10.1007/978-3-030-52791-4_4" target="_blank">[Publisher's link]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:R21ilOuevEIJ:scholar.google.com/&output=citation&scisdr=CgXdYspaEJSh0l5eM_8:AAGBfm0AAAAAYdtYK_8xIe_hoRLlGiL5u-EI4PYaJwCY&scisig=AAGBfm0AAAAAYdtYKySMsFe6l3iiIuIc7EEoPII4QQlG&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1" target="_blank">[Bibtex]</a></p>
             <p style="text-align:left;">5. Wan Y, <b>Rahmat R</b>, Price SJ. Deep learning for glioblastoma segmentation using preoperative magnetic resonance imaging identifies volumetric features associated with survival. Acta Neurochirurgica. 2020 Jul 13:1-4.<a href="https://link.springer.com/article/10.1007/s00701-020-04483-7" target="_blank">[Publisher's link]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:U5z4mAQhRGsJ:scholar.google.com/&output=citation&scisdr=CgXdYspaEJSh0l5cNa8:AAGBfm0AAAAAYdtaLa8_dtLahep02rgc8XTxdJTO173I&scisig=AAGBfm0AAAAAYdtaLWlk73ykeYSqLXHANFmffvFAJwQT&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1" target="_blank">[Bibtex]</a></p>
             <p style="text-align:left;">6. <b>Rahmat R</b>, Saednia K, Khani MR, Rahmati M, Jena R, Price SJ. Multi-scale segmentation in GBM treatment using diffusion tensor imaging. Computers in Biology and Medicine. 2020 May 22:103815.<a href="https://www.sciencedirect.com/science/article/pii/S0010482520301815" target="_blank">[Publisher's link]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:bE9apoJf6SUJ:scholar.google.com/&output=citation&scisdr=CgXdYspaEJSh0l5cGmk:AAGBfm0AAAAAYdtaAmnpIwAvob7ZNlaSyGYhBqr8764C&scisig=AAGBfm0AAAAAYdtaAprNnsnD4DpJzOAI7IfH4qNfTMrS&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1" target="_blank">[Bibtex]</a></p>
             <p style="text-align:left;">7. Stefani A, <b>Rahmat R</b>, Harris-Birtill D. Autofocus Net: Auto-focused 3D CNN for Brain Tumour Segmentation. InAnnual Conference on Medical Image Understanding and Analysis 2020 Jul 15 (pp. 43-55). Springer, Cham. <a href="https://link.springer.com/chapter/10.1007/978-3-030-52791-4_4" target="_blank">[Publisher's link]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:7LzVVHnqz78J:scholar.google.com/&output=citation&scisdr=CgXdYspaEJSh0l5cvkc:AAGBfm0AAAAAYdtapkd0cvmQ6AhY07nxflNXkR_otu7t&scisig=AAGBfm0AAAAAYdtapu4Uxl862sQMRXaJnY-ykOlrom5x&scisf=4&ct=citation&cd=-1&hl=en" target="_blank">[Bibtex]</a></p>
@@ -523,8 +471,6 @@
             <p style="text-align:left;">20. <b>Rahmat R</b>, Kamel NS, Yahya N. Subspace-based signature verification technique using reduced-sensor data glove. In2009 IEEE Symposium on Industrial Electronics & Applications 2009 Oct 4 (Vol. 1, pp. 83-88). IEEE.<a href="https://ieeexplore.ieee.org/abstract/document/5356475" target="_blank">[Publisher's link]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:2I4luByIE-8J:scholar.google.com/&output=citation&scisdr=CgXdYspaEJSh0l5YyQo:AAGBfm0AAAAAYdte0QoljKGm3y8hcLcGmhxPLbL9o8DE&scisig=AAGBfm0AAAAAYdte0QNd0G1HqiI7rlbplie6YsDoRej_&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1" target="_blank">[Bibtex]</a></p>
             <p style="text-align:left;">21. <b>Rahmat R</b>, Online Signature Verification using SVD Method.<a href="http://utpedia.utp.edu.my/8809/1/2009%20-%20Online%20Signure%20Verification%20using%20SVD%20Method.pdf" target="_blank">[Publisher's link]</a></p>
         </div>
-    <!-- End #Publication -->
-
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -535,10 +481,7 @@
                 <button type="submit">Send</button>
             </form>
         </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
+        </div>
     <footer>
         <div class="container">
             <div class="row">
@@ -555,7 +498,6 @@
 		<div class="col-sm-5 social">
                     <ul>
                         <li><a href="https://github.com/RoushanakRahmat" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        <!-- <li><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li> -->
                         <li><a href="https://www.linkedin.com/in/roushanakrahmat/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="https://medium.com/@roushanakrahmat" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
                         <li><a href="https://www.instagram.com/roushanakrahmat/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -567,8 +509,6 @@
             </div>
         </div>
     </footer>
-    <!-- End footer -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
